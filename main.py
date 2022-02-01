@@ -112,11 +112,11 @@ def add_mysql_record(sessionId, student_id, teacher_id, link, duration):
     #pass
     #"""
     conn = mysql.connector.connect(
-        host="45.86.180.72",
+        host="",
         port=3306,
-        user="Videoserver",
-        password="Phohl2Ia1e",
-        database="online"
+        user="",
+        password="",
+        database=""
     )
     cur = conn.cursor()
     sql_command = 'INSERT INTO recorded_videos (session_id, student_id, teacher_id, link, duration) VALUES ("{0}", {1}, {2}, "{3}", {4})'.format(sessionId, student_id, teacher_id, link, duration)
